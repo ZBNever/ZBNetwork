@@ -15,6 +15,7 @@
 		CA63A2F81C45331B00D5ECA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA63A2F61C45331B00D5ECA7 /* LaunchScreen.storyboard */; };
 		CA63A3031C45331B00D5ECA7 /* _____AFNetworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA63A3021C45331B00D5ECA7 /* _____AFNetworkingTests.m */; };
 		CA63A30E1C45331B00D5ECA7 /* _____AFNetworkingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA63A30D1C45331B00D5ECA7 /* _____AFNetworkingUITests.m */; };
+		CA63A31E1C4533C100D5ECA7 /* ZBHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA63A31D1C4533C100D5ECA7 /* ZBHttpManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		CA63A3091C45331B00D5ECA7 /* 自定义封装AFNetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义封装AFNetworkingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA63A30D1C45331B00D5ECA7 /* _____AFNetworkingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____AFNetworkingUITests.m"; sourceTree = "<group>"; };
 		CA63A30F1C45331B00D5ECA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA63A31C1C4533C100D5ECA7 /* ZBHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBHttpManager.h; sourceTree = "<group>"; };
+		CA63A31D1C4533C100D5ECA7 /* ZBHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBHttpManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		CA63A2DC1C45331B00D5ECA7 = {
 			isa = PBXGroup;
 			children = (
+				CA63A31B1C4533C100D5ECA7 /* Network */,
 				CA63A2E71C45331B00D5ECA7 /* 自定义封装AFNetworking */,
 				CA63A3011C45331B00D5ECA7 /* 自定义封装AFNetworkingTests */,
 				CA63A30C1C45331B00D5ECA7 /* 自定义封装AFNetworkingUITests */,
@@ -138,6 +142,15 @@
 				CA63A30F1C45331B00D5ECA7 /* Info.plist */,
 			);
 			path = "自定义封装AFNetworkingUITests";
+			sourceTree = "<group>";
+		};
+		CA63A31B1C4533C100D5ECA7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CA63A31C1C4533C100D5ECA7 /* ZBHttpManager.h */,
+				CA63A31D1C4533C100D5ECA7 /* ZBHttpManager.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA63A2F01C45331B00D5ECA7 /* ViewController.m in Sources */,
+				CA63A31E1C4533C100D5ECA7 /* ZBHttpManager.m in Sources */,
 				CA63A2ED1C45331B00D5ECA7 /* AppDelegate.m in Sources */,
 				CA63A2EA1C45331B00D5ECA7 /* main.m in Sources */,
 			);
@@ -498,6 +512,7 @@
 				CA63A3141C45331B00D5ECA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA63A3151C45331B00D5ECA7 /* Build configuration list for PBXNativeTarget "自定义封装AFNetworkingTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +521,7 @@
 				CA63A3171C45331B00D5ECA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA63A3181C45331B00D5ECA7 /* Build configuration list for PBXNativeTarget "自定义封装AFNetworkingUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +530,7 @@
 				CA63A31A1C45331B00D5ECA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
